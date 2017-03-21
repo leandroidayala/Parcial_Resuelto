@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Parcial</string>
+    <string name="str_contact1">Contacto 1</string>
+    <string name="str_contact">Contacto 2</string>
+    <string name="str_prf_name">Nombre: Leand</string>
+    <string name="str_prf_lastname">Apellido: Ayala</string>
+    <string name="str_prf_age">Edad: 24</string>
+    <string name="str_prf_phone">3185451009</string>
+    <string name="form_email">Correo electronico</string>
+    <string name="form_commentary">Comentario</string>
+    <string name="str_prf_update">Actualizar</string>
+    <string name="str_title_toolbar">Volver a la lista prinipal</string>
+</resources>

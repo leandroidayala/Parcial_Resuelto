@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aula7.parcial.ProfileActivity">
+
+    <include layout="@layout/my_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/str_prf_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_prf_name"
+                android:layout_toRightOf="@id/logo"
+                />
+
+            <TextView
+                android:id="@+id/str_prf_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_prf_lastname"
+                android:layout_below="@id/str_prf_name"
+                android:layout_toRightOf="@id/logo"
+                />
+            <TextView
+                android:id="@+id/str_prf_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_prf_age"
+                android:layout_below="@id/str_prf_lastname"
+                android:layout_toRightOf="@id/logo"
+                />
+            <TextView
+                android:id="@+id/str_prf_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_prf_phone"
+                android:layout_below="@id/str_prf_age"
+                android:layout_toRightOf="@id/logo"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.4">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_email"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_commentary"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_prf_update"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
